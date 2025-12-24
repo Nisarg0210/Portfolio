@@ -26,13 +26,13 @@ export default function About() {
                     <div className="space-y-12">
                         <div className="text-text-secondary font-normal text-base md:text-[1.0625rem] leading-[1.8] space-y-8">
                             <p>
-                                I am an IT Systems Support Specialist with over 3 years of experience in government and enterprise sectors. My work is defined by a commitment to stability—ensuring that the complex systems powering our institutions remain secure, updated, and efficient.
+                                I am an IT Systems Support Specialist with over 3 years of experience in government and enterprise sectors. My work is defined by a commitment to stability ensuring that the complex systems powering our institutions remain secure, updated, and efficient.
                             </p>
                             <p>
                                 Currently, as a Regional Systems Officer for the Ministry of Solicitor General, I serve as a primary technical lead for the Court Support Division. This role demands not just technical acuity, but the ability to operate under pressure, supporting judiciary staff and VIPs across the province.
                             </p>
                             <p>
-                                My approach goes beyond "fixing tickets." I focus on <strong className="font-semibold text-navy">Systems Ownership</strong>—understanding the root cause of issues, automating routine maintenance, and proactively upgrading infrastructure before problems arise.
+                                My approach goes beyond "fixing tickets." I focus on <strong className="font-semibold text-navy">Systems Ownership</strong> understanding the root cause of issues, automating routine maintenance, and proactively upgrading infrastructure before problems arise.
                             </p>
                         </div>
                     </div>
