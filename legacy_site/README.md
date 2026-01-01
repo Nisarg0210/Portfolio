@@ -1,2 +1,0 @@
-# NisargPatel
-Personal Website

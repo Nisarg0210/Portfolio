@@ -81,6 +81,12 @@
       "regex": "^/projects(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/projects(?:/)?$"
+    },
+    {
+      "page": "/tech-stack",
+      "regex": "^/tech\\-stack(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/tech\\-stack(?:/)?$"
     }
   ],
   "dataRoutes": [],

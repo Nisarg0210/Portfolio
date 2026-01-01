@@ -8,5 +8,6 @@
   "/experience/page": "/experience",
   "/favicon.ico/route": "/favicon.ico",
   "/page": "/",
-  "/projects/page": "/projects"
+  "/projects/page": "/projects",
+  "/tech-stack/page": "/tech-stack"
 }

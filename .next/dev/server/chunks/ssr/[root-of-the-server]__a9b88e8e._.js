@@ -129,7 +129,7 @@ function About() {
                                 className: "text-text-secondary font-normal text-base md:text-[1.0625rem] leading-[1.8] space-y-8",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: "I am an IT Systems Support Specialist with over 3 years of experience in government and enterprise sectors. My work is defined by a commitment to stability—ensuring that the complex systems powering our institutions remain secure, updated, and efficient."
+                                        children: "I am an IT Systems Support Specialist with over 3 years of experience in government and enterprise sectors. My work is defined by a commitment to stability ensuring that the complex systems powering our institutions remain secure, updated, and efficient."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/about/page.tsx",
                                         lineNumber: 28,
@@ -153,7 +153,7 @@ function About() {
                                                 lineNumber: 35,
                                                 columnNumber: 86
                                             }, this),
-                                            "—understanding the root cause of issues, automating routine maintenance, and proactively upgrading infrastructure before problems arise."
+                                            " understanding the root cause of issues, automating routine maintenance, and proactively upgrading infrastructure before problems arise."
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/about/page.tsx",

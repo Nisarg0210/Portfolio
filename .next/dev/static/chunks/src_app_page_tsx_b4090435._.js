@@ -25,7 +25,7 @@ function Home() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "relative flex min-h-[90vh] flex-col items-center justify-center overflow-hidden bg-background px-6",
+                className: "relative flex min-h-[85vh] flex-col items-center justify-center overflow-hidden bg-background px-6 py-12 md:py-20",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 z-0 overflow-hidden",
@@ -53,7 +53,7 @@ function Home() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "relative z-10 max-w-6xl w-full mx-auto",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex flex-col lg:flex-row items-center gap-16 lg:gap-24 text-center lg:text-left",
+                            className: "flex flex-col lg:flex-row items-center gap-10 lg:gap-24 text-center lg:text-left",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "relative flex-shrink-0",
@@ -74,7 +74,7 @@ function Home() {
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "relative h-[140px] w-[140px] md:h-[180px] md:w-[180px] rounded-full p-[1px] bg-surface shadow-xl shadow-navy/10 overflow-hidden border border-border",
+                                            className: "relative h-[110px] w-[110px] md:h-[180px] md:w-[180px] rounded-full p-[1px] bg-surface shadow-xl shadow-navy/10 overflow-hidden border border-border",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                 src: "/images/profile.jpg",
                                                 alt: "Nisarg Patel profile photo",
@@ -98,13 +98,13 @@ function Home() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex-1 space-y-10",
+                                    className: "flex-1 space-y-8 md:space-y-10",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex flex-col items-center lg:items-start gap-6",
+                                            className: "flex flex-col items-center lg:items-start gap-4 md:gap-6",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "rounded-full border border-border bg-surface/80 px-4 py-1.5 text-[0.8125rem] font-semibold uppercase tracking-[0.2em] text-steel backdrop-blur-sm shadow-sm",
+                                                    className: "rounded-full border border-border bg-surface/80 px-4 py-1.5 text-[0.75rem] md:text-[0.8125rem] font-semibold uppercase tracking-[0.2em] text-steel backdrop-blur-sm shadow-sm",
                                                     children: "Senior IT Systems Support"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/page.tsx",
@@ -112,7 +112,7 @@ function Home() {
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                                    className: "text-4xl md:text-[3.25rem] font-bold tracking-tight text-foreground lg:leading-[1.2]",
+                                                    className: "text-3xl md:text-[3.25rem] font-bold tracking-tight text-foreground leading-tight md:leading-[1.2]",
                                                     children: [
                                                         "Reliability ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -155,7 +155,7 @@ function Home() {
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "max-w-2xl text-lg md:text-[1.125rem] font-normal leading-relaxed text-text-secondary text-balance",
+                                                    className: "max-w-2xl text-[1rem] md:text-[1.125rem] font-normal leading-relaxed text-text-secondary text-balance",
                                                     children: "Expert systems administration and infrastructure support for government and enterprise environments."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/page.tsx",
@@ -169,10 +169,10 @@ function Home() {
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex flex-col gap-6 sm:flex-row justify-center lg:justify-start pt-2",
+                                            className: "flex flex-col gap-4 sm:flex-row justify-center lg:justify-start pt-2 w-full sm:w-auto",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                 href: "/experience",
-                                                className: "group relative inline-flex items-center justify-center gap-3 rounded-xl bg-navy px-10 py-5 text-base font-semibold text-white transition-all hover:bg-steel active:scale-[0.98] focus:ring-4 focus:ring-teal/20 outline-none overflow-hidden shadow-lg shadow-navy/20",
+                                                className: "group relative inline-flex w-full sm:w-auto items-center justify-center gap-3 rounded-xl bg-navy px-10 py-4 md:py-5 text-base font-semibold text-white transition-all hover:bg-steel active:scale-[0.98] focus:ring-4 focus:ring-teal/20 outline-none overflow-hidden shadow-lg shadow-navy/20",
                                                 children: [
                                                     "View Bio & Experience",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
