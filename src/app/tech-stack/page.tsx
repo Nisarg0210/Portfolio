@@ -41,6 +41,31 @@ interface SkillItem {
 const skillCategories: SkillItem[] = [
     {
         category: "Systems",
+        title: "Apple & macOS",
+        description: "Modern Apple fleet management & zero-touch provisioning",
+        icon: Cpu,
+        skills: [
+            "macOS Administration",
+            "iOS Device Management",
+            "Kandji MDM",
+            "Zero-Touch Provisioning",
+            "Apple Business Manager (ABM)"
+        ]
+    },
+    {
+        category: "Systems",
+        title: "Google Workspace",
+        description: "Production Google Workspace administration",
+        icon: Globe,
+        skills: [
+            "Admin Console",
+            "User Provisioning & Groups",
+            "Drive & Gmail Management",
+            "Workspace Security Policies"
+        ]
+    },
+    {
+        category: "Systems",
         title: "Core Systems & Platforms",
         description: "Enterprise infrastructure management",
         icon: Server,
@@ -48,7 +73,8 @@ const skillCategories: SkillItem[] = [
             "Windows 10/11 Administration",
             "Windows Server (AD, GPO)",
             "Microsoft 365 Administration",
-            "Azure AD / Entra ID"
+            "Azure AD / Entra ID",
+            "SharePoint & Teams"
         ]
     },
     {
@@ -57,7 +83,8 @@ const skillCategories: SkillItem[] = [
         description: "Mass deployment & configuration",
         icon: Monitor,
         skills: [
-            "Microsoft Endpoint Manager (Intune)",
+            "Microsoft Intune / Endpoint Manager",
+            "Kandji MDM",
             "MECM / SCCM",
             "Imaging & Deployment",
             "Patch Management"
@@ -70,69 +97,77 @@ const skillCategories: SkillItem[] = [
         icon: Wifi,
         skills: [
             "TCP/IP, DNS, DHCP",
-            "VPN & Remote Connectivity",
+            "VPN — FortiClient, RAVPN, Always-On",
             "LAN/WAN Troubleshooting",
+            "Cisco VOIP",
             "Network Printing"
         ]
     },
     {
         category: "ITSM",
         title: "ITSM & Operations",
-        description: "Service delivery excellence",
+        description: "Full incident lifecycle management",
         icon: Layers,
         skills: [
+            "Jira",
+            "ServiceNow",
+            "BMC Remedy",
             "Incident & Problem Management",
-            "Ticketing Workflows",
-            "Root Cause Analysis",
-            "Knowledge Base Management"
+            "KCS Knowledge Base Management",
+            "Root Cause Analysis"
         ]
     },
     {
         category: "Courtroom Tech",
-        title: "Courtroom Technology",
-        description: "Specialized legal AV support",
+        title: "Courtroom & AV Technology",
+        description: "Specialized legal AV & collaboration support",
         icon: Monitor,
         skills: [
-            "A/V Systems Support",
+            "Justice Video Network (JVN)",
+            "Crestron AV Systems",
             "Hybrid Courtroom Setup",
-            "Video Conferencing (Teams/Zoom)",
-            "Digital Recording Systems"
+            "MS Teams / Zoom / Cisco Webex",
+            "Virtual Proceedings Configuration"
         ]
     },
     {
         category: "Systems",
-        title: "Hardware & Vendor Support",
-        description: "Physical infrastructure maintenance",
+        title: "Hardware & Vendor Management",
+        description: "Full lifecycle hardware & procurement",
         icon: Cpu,
         skills: [
-            "Hardware Diagnostics",
-            "Printer Deployment",
-            "Device Inventory",
-            "Vendor Coordination"
+            "Hardware Diagnostics & Repair",
+            "Procurement & Invoicing",
+            "Apple Canada Vendor Relations",
+            "Contract Renewals & Third-Party SLAs",
+            "Device Inventory & Asset Tracking"
         ]
     },
     {
         category: "Security",
         title: "Security & Compliance",
-        description: "Enterprise security hygiene",
+        description: "Enterprise security & compliance posture",
         icon: Shield,
         skills: [
-            "Access Controls",
-            "Endpoint Security",
-            "Policy Compliance",
-            "Standard Operating Procedures"
+            "Microsoft Defender",
+            "BitLocker Encryption",
+            "MFA / SSO",
+            "MDM Policy Enforcement",
+            "SOC 2 Compliance Awareness",
+            "Access Controls & PKI"
         ]
     },
     {
         category: "Automation",
         title: "Scripting & Automation",
-        description: "Efficiency & repeatable workflows",
+        description: "IT automation for provisioning & workflows",
         icon: Terminal,
         skills: [
             "PowerShell",
-            "Scripting Logic",
-            "Workflow Automation",
-            "Troubleshooting Scripts"
+            "Python",
+            "Device Imaging Automation",
+            "Software Deployment Scripts",
+            "Onboarding & Provisioning Workflows"
         ]
     }
 ];
@@ -295,7 +330,7 @@ export default function TechStack() {
                             transition={{ delay: 0.2 }}
                             className="text-lg md:text-xl text-text-secondary leading-relaxed"
                         >
-                            Enterprise systems, endpoint management, courtroom technology, and <span className="text-teal font-medium">AI-assisted workflows</span>.
+                            Apple & macOS, Google Workspace, enterprise endpoint management, courtroom AV technology, and <span className="text-teal font-medium">AI-assisted workflows</span>.
                         </motion.p>
                     </div>
                 </div>

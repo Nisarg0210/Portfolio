@@ -1,5 +1,5 @@
 import Section from "@/components/Section";
-import { Laptop, Smartphone, Shield, ArrowUpRight, CheckCircle2, Printer, Monitor, Activity } from "lucide-react";
+import { Laptop, Smartphone, Shield, ArrowUpRight, CheckCircle2, Printer, Monitor, Activity, Terminal } from "lucide-react";
 
 export const metadata = {
     title: "Projects | Nisarg Patel",
@@ -10,33 +10,33 @@ export default function Projects() {
         {
             icon: Laptop,
             title: "Windows 11 Enterprise Migration",
-            desc: "Led and supported a large-scale Windows 11 migration across ministry users, ensuring secure deployment, minimal downtime, and zero data loss.",
-            impact: { value: "500+", label: "Devices Deployed" },
-            tech: ["Intune / MECM", "MECM", "OneDrive KFM"],
+            desc: "Led end-to-end Windows 11 migration using Intune/MECM for 500+ devices with zero data loss. Configured OneDrive Known Folder Move (KFM) for seamless user data transition across all managed endpoints.",
+            impact: { value: "500+", label: "Devices Migrated" },
+            tech: ["Intune / MECM", "OneDrive KFM", "Windows 11"],
             accent: "teal"
         },
         {
             icon: Monitor,
             title: "Courtroom A/V Modernization",
-            desc: "Supported the upgrade of audio-visual systems to enable virtual proceedings. Configured Justice Video Network infrastructure for reliable remote testimony.",
+            desc: "Upgraded courtroom AV systems to enable virtual proceedings. Configured Justice Video Network (JVN) with Crestron hardware and Microsoft Teams for hybrid court operations and remote testimony.",
             impact: { value: "JVN", label: "Network Integration" },
-            tech: ["JVN", "Crestron", "Teams"],
+            tech: ["JVN", "Crestron", "Teams", "Zoom"],
             accent: "steel"
         },
         {
             icon: Smartphone,
-            title: "Enterprise MDM Migration",
-            desc: "Transitioned mobile fleet from legacy Blackberry servers to Microsoft Intune, enabling secure remote work capabilities for government personnel.",
-            impact: { value: "100%", label: "Security Compliance" },
-            tech: ["Intune", "iOS Enterprise", "Android"],
+            title: "Enterprise MDM Migration – BlackBerry to Intune",
+            desc: "Migrated full government mobile fleet from legacy BlackBerry Enterprise Server to Microsoft Intune. Achieved 100% MDM compliance across iOS and Android devices in production with zero data loss.",
+            impact: { value: "100%", label: "MDM Compliance" },
+            tech: ["Intune", "iOS", "Android", "BlackBerry ES"],
             accent: "teal"
         },
         {
-            icon: Printer,
-            title: "Printer Fleet Modernization",
-            desc: "Orchestrated the deployment and decommissioning of enterprise Ricoh printers across ministry sites, ensuring driver standardization and connectivity.",
-            impact: { value: "Ricoh", label: "Fleet Refresh" },
-            tech: ["Print Management", "GPO", "TCP/IP"],
+            icon: Terminal,
+            title: "PowerShell IT Automation",
+            desc: "Developed PowerShell automation scripts to streamline device imaging, software deployment, and recurring IT provisioning tasks — reducing manual operational effort by approximately 30%.",
+            impact: { value: "~30%", label: "Effort Reduction" },
+            tech: ["PowerShell", "Intune", "SCCM", "Automation"],
             accent: "steel"
         }
     ];
@@ -72,7 +72,7 @@ export default function Projects() {
                                     <h2 className="text-2xl md:text-[26px] font-bold text-navy tracking-tight">Ministry Hardware Transformation</h2>
                                 </div>
                                 <p className="text-base md:text-[17px] text-text-secondary font-normal leading-relaxed max-w-2xl">
-                                    Orchestrated a critical infrastructure refresh for the Ministry, upgrading and relocating hardware for over 500 employees. This initiative was pivotal in maintaining security compliance and modernizing the workforce toolset with localized on-site support.
+                                    Orchestrated a critical infrastructure refresh for the Ministry, upgrading and relocating hardware for over 500 employees. Coordinated Radia deployment and end-user training to modernize workforce toolsets — achieving 100% data retention and zero operational downtime throughout the transition.
                                 </p>
                                 <div className="flex flex-wrap gap-3">
                                     {["Windows 11 Migration", "Radia Deployment", "Crisis Management", "User Training"].map((tag, i) => (
