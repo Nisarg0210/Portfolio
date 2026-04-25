@@ -1,7 +1,7 @@
 "use client";
 
 import Section from "@/components/Section";
-import { Mail, Linkedin, Phone, Send } from "lucide-react";
+import { Mail, Linkedin, Send } from "lucide-react";
 import { useState } from "react";
 
 export default function Contact() {
@@ -98,19 +98,6 @@ export default function Contact() {
                                 </a>
                             ))}
 
-                            <div className="group relative flex items-center gap-6 p-6 md:p-8 rounded-3xl bg-surface border border-border hover:border-navy shadow-premium transition-all duration-300 overflow-hidden">
-                                <div className="absolute left-0 top-0 h-full w-[3px] opacity-10 group-hover:opacity-100 transition-opacity bg-steel" />
-
-                                <div className="h-12 w-12 shrink-0 rounded-xl bg-steel/5 text-steel flex items-center justify-center transition-all duration-300 group-hover:bg-steel group-hover:text-white">
-                                    <Phone className="h-5 w-5" />
-                                </div>
-                                <div className="min-w-0 flex-1">
-                                    <div className="text-[0.75rem] font-bold uppercase tracking-widest text-steel mb-1">Phone</div>
-                                    <div className="text-base md:text-[1.0625rem] font-bold text-navy transition-colors whitespace-nowrap">
-                                        (437) 981-0210
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
