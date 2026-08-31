@@ -1,7 +1,7 @@
 "use client";
 
 import Section from "@/components/Section";
-import { Mail, Linkedin, Send, Phone } from "lucide-react";
+import { Mail, Linkedin, Send } from "lucide-react";
 import { useState } from "react";
 
 export default function Contact() {
@@ -66,13 +66,6 @@ export default function Contact() {
                                     icon: Mail,
                                     label: "Email",
                                     value: "nisargpatel02.np@gmail.com",
-                                    accent: "teal"
-                                },
-                                {
-                                    href: "tel:+14379810210",
-                                    icon: Phone,
-                                    label: "Phone",
-                                    value: "(437) 981-0210",
                                     accent: "teal"
                                 },
                                 {
