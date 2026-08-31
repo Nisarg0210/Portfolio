@@ -239,6 +239,25 @@ export default function Home() {
               "linear-gradient(to top, var(--background), transparent)",
           }}
         />
+
+        {/* Scroll hint */}
+        <motion.div
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 pointer-events-none"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.2, duration: 0.6 }}
+        >
+          <span
+            className="text-[0.625rem] font-bold uppercase tracking-[0.25em]"
+            style={{ color: "var(--color-text-secondary)", opacity: 0.5 }}
+          >
+            Scroll
+          </span>
+          <div
+            className="w-[1px] h-8 rounded-full scroll-hint"
+            style={{ background: "linear-gradient(to bottom, var(--color-teal), transparent)" }}
+          />
+        </motion.div>
       </section>
 
       {/* ─────────────── CORE COMPETENCIES ─────────────── */}
@@ -287,6 +306,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.55, delay: idx * 0.1 }}
+                whileHover={{ y: -6, transition: { duration: 0.25 } }}
                 className="card-futuristic group flex flex-col items-center text-center gap-5 p-8"
               >
                 {/* Icon */}

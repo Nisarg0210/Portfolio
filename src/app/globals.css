@@ -131,6 +131,26 @@ a {
   50%       { transform: translateY(-4px); }
 }
 
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes line-draw {
+  from { transform: scaleX(0); opacity: 0; }
+  to   { transform: scaleX(1); opacity: 1; }
+}
+
+@keyframes subtle-pulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50%       { opacity: 0.7; transform: scale(1.15); }
+}
+
+@keyframes scroll-hint {
+  0%, 100% { transform: translateY(0); opacity: 0.5; }
+  50%       { transform: translateY(6px); opacity: 1; }
+}
+
 /* ─── Utilities ─── */
 @layer utilities {
   /* Shadows */
@@ -230,5 +250,42 @@ a {
       0 20px 40px -10px rgba(0,0,0,0.5),
       0 0 30px -5px var(--color-glow),
       0 0 0 1px color-mix(in srgb, var(--color-teal) 30%, transparent);
+  }
+
+  .shadow-premium-hover {
+    box-shadow:
+      0 24px 48px -12px rgba(0,0,0,0.14),
+      0 0 0 1px color-mix(in srgb, var(--color-teal) 15%, transparent);
+  }
+  .dark .shadow-premium-hover {
+    box-shadow:
+      0 24px 48px -12px rgba(0,0,0,0.55),
+      0 0 24px -6px var(--color-glow),
+      0 0 0 1px color-mix(in srgb, var(--color-teal) 25%, transparent);
+  }
+
+  .scroll-hint {
+    animation: scroll-hint 2s ease-in-out infinite;
+  }
+
+  .timeline-glow {
+    box-shadow: 0 0 0 4px var(--color-muted), 0 0 16px var(--color-glow);
+  }
+
+  .pb-safe {
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+
+  .pt-safe {
+    padding-top: max(0px, env(safe-area-inset-top));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

@@ -13,9 +13,10 @@ interface SectionProps {
 export default function Section({ children, className, delay = 0 }: SectionProps) {
     return (
         <motion.section
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay, ease: "easeOut" }}
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.12 }}
+            transition={{ duration: 0.55, delay, ease: [0.22, 1, 0.36, 1] }}
             className={clsx("py-16 md:py-24 px-6 mx-auto max-w-5xl w-full", className)}
         >
             {children}

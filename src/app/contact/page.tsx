@@ -1,8 +1,11 @@
 "use client";
 
 import Section from "@/components/Section";
+import PageHeader from "@/components/motion/PageHeader";
+import FadeIn from "@/components/motion/FadeIn";
 import { Mail, Linkedin, Send } from "lucide-react";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Contact() {
     const [formStatus, setFormStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
@@ -42,22 +45,16 @@ export default function Contact() {
 
     return (
         <div className="bg-background min-h-screen">
-            <div className="pt-40 pb-24 px-6 max-w-6xl mx-auto">
-                <div className="max-w-3xl">
-                    <span className="inline-block text-steel font-bold tracking-[0.3em] uppercase text-[0.8125rem] mb-6">Inquiry & Collaboration</span>
-                    <h1 className="text-4xl md:text-[3.25rem] font-bold tracking-tight mb-8">
-                        <span className="bg-gradient-to-r from-navy via-steel to-navy bg-clip-text text-transparent">Let's Connect.</span>
-                    </h1>
-                    <p className="text-xl md:text-[1.375rem] font-normal text-text-secondary leading-relaxed">
-                        Open to opportunities in resolving complex infrastructure challenges and exploring high-impact IT roles.
-                    </p>
-                </div>
-            </div>
+            <PageHeader
+                label="Inquiry & Collaboration"
+                title="Let's Connect."
+                description="Open to opportunities in resolving complex infrastructure challenges and exploring high-impact IT roles."
+            />
 
             <Section className="py-20 bg-background border-t border-border">
                 <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-[1fr_1.2fr] gap-20 items-start">
 
-                    <div className="space-y-10">
+                    <FadeIn direction="right" className="space-y-10">
                         <h2 className="text-[0.8125rem] font-bold uppercase tracking-[0.4em] text-steel">Direct Contact</h2>
                         <div className="grid gap-6">
                             {[
@@ -76,12 +73,17 @@ export default function Contact() {
                                     accent: "steel"
                                 }
                             ].map((item, idx) => (
-                                <a
+                                <motion.a
                                     key={idx}
                                     href={item.href}
                                     target={item.href.startsWith("http") ? "_blank" : undefined}
                                     rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                                    className="group relative flex items-center gap-6 p-6 md:p-8 rounded-3xl bg-surface border border-border hover:border-navy shadow-premium transition-all duration-300 overflow-hidden"
+                                    className="group relative flex items-center gap-6 p-6 md:p-8 rounded-3xl bg-surface border border-border hover:border-navy shadow-premium transition-colors duration-300 overflow-hidden"
+                                    initial={{ opacity: 0, x: -16 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: idx * 0.1, duration: 0.45 }}
+                                    whileHover={{ x: 4, y: -2 }}
                                 >
                                     {/* Subtle Interactive Accent */}
                                     <div className={`absolute left-0 top-0 h-full w-[3px] opacity-10 group-hover:opacity-100 transition-opacity bg-${item.accent}`} />
@@ -95,13 +97,18 @@ export default function Contact() {
                                             {item.value}
                                         </div>
                                     </div>
-                                </a>
+                                </motion.a>
                             ))}
 
                         </div>
-                    </div>
+                    </FadeIn>
 
-                    <div className="relative bg-surface rounded-3xl p-10 md:p-14 shadow-premium border border-border overflow-hidden">
+                    <FadeIn delay={0.15} direction="left">
+                    <motion.div
+                        className="relative bg-surface rounded-3xl p-10 md:p-14 shadow-premium border border-border overflow-hidden"
+                        whileHover={{ y: -3 }}
+                        transition={{ duration: 0.35 }}
+                    >
                         {/* Teal Accent Top Border */}
                         <div className="absolute top-0 left-0 w-full h-[4px] bg-teal" />
 
@@ -167,7 +174,8 @@ export default function Contact() {
                                 </span>
                             </button>
                         </form>
-                    </div>
+                    </motion.div>
+                    </FadeIn>
 
                 </div>
             </Section>

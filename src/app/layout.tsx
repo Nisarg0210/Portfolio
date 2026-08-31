@@ -23,6 +23,12 @@ export const metadata: Metadata = {
     "IT Support Analyst with 4+ years of experience in Tier 1 and Tier 2 support across government and enterprise environments.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
